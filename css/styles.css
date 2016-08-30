@@ -1,0 +1,40 @@
+.course-list {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
+  /* -ms-flex-flow: row wrap;
+       flex-flow: row wrap;*/
+
+    flex-wrap: wrap;
+   -webkit-box-pack: flex-start;
+       -ms-flex-pack: flex-start;
+           justify-content: flex-start;
+   -webkit-box-align: left;
+       -ms-flex-align: left;
+           align-items: left;
+   padding: 10px 0;
+}
+
+li.course {
+  margin: 10px;
+  flex: 1 1 calc(33.33% - 20px);
+  border: 0px red solid;
+  min-width: 150px;
+
+}
+
+li.course .card {
+  height: 100%
+}
+
+.teacher {
+  text-align: left;
+}
+.fall {
+  color: rgba(80, 80, 80, .9);
+  text-align: left;
+}
